@@ -24,4 +24,4 @@ window.onload=() =>{
     elemento.addEventListener("keyup",(event) =>{    
         event.target.value=event.target.value.toUpperCase();
     });
-}
+}           
