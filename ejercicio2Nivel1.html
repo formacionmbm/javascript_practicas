@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1. Dada una tabla con un `id="miTabla"`, escribe un script para añadir una nueva fila con 
+dos celdas que digan "Nueva Celda 1" y "Nueva Celda 2".-->
+<table id="miTabla" border="1"> 
+  <tr> 
+    <td>Celda 1</td> 
+    <td>Celda 2</td> 
+  </tr> 
+</table> 
+<script> 
+    // let mitabla=document.querySelector("#miTabla");
+    // let fila=mitabla.firstElementChild.firstElementChild;
+    // let nuevaFila=fila.cloneNode();
+    // nuevaFila.innerHTML="<td>Nueva Celda 1</td> <td>Nueva Celda 2</td>";
+    // mitabla.firstElementChild.appendChild(nuevaFila);
+
+    let mitabla=document.querySelector("#miTabla");
+    let nuevaFila=document.createElement("tr");
+    nuevaFila.innerHTML="<td>Nueva Celda 11</td> <td>Nueva Celda 22</td>";
+    mitabla.firstElementChild.appendChild(nuevaFila);
+
+  </script> 
+</body>
+</html>
